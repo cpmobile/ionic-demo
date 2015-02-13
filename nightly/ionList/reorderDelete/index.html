@@ -1,4 +1,25 @@
+<!doctype html>
+<html ng-app="reorderDelete" ng-controller="IonicDemoCtrl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link rel="stylesheet" href="/nightly/ionic/css/ionic.min.css">
+<script src="/nightly/ionic/js/ionic.bundle.min.js"></script>
+<script src="/nightly/pages-data.js"></script>
 
+
+
+  <script src="index.js"></script>
+
+<script src="index-ionic-demo-app.js"></script>
+</head>
+<body>
+
+
+
+<div class="demo-content-pane">
+  
+  
 <div ng-controller="ListCtrl">
   <ion-header-bar class="bar-positive">
     <a class="button" ng-click="toggleDelete()">
@@ -22,22 +43,6 @@
                            ng-click="share(item)">
           Share
         </ion-option-button>
-        <ion-option-button class="button-info"
-                           ng-click="edit(item)">
-          Edit
-        </ion-option-button>
-        <ion-delete-button class="ion-minus-circled"
-                           ng-click="items.splice($index, 1)">
-        </ion-delete-button>
-        <ion-reorder-button class="ion-navicon"
-                            on-reorder="reorderItem(item, $fromIndex, $toIndex)">
-        </ion-reorder-button>
-
-      </ion-item>
-    </ion-list>
-  </ion-content>
-</div>
-/ion-option-button>
         <ion-option-button class="button-info"
                            ng-click="edit(item)">
           Edit
